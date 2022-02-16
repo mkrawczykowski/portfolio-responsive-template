@@ -1,5 +1,65 @@
 .navbar{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    color: $white;
+    font-family: 'Epilogue';
+    padding: 0 2.4rem;
+
     @media (min-width: breakpoint(sm)) {
-        
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: auto;
+        padding: 0;
+    }
+
+    &__brand{
+        width: 4.56rem;
+        height: 4.34rem;
+        grid-row: 1;
+        grid-column: 1;
+        display: flex;
+
+        h2{
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            margin: 1rem 0 0rem 1.5rem;
+        }
+    }
+
+    &__main-menu{
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+
+
+        @media (min-width: breakpoint(sm)){
+            grid-row: 1;
+            grid-column-start: 2;
+            flex-direction: row;
+        }
+
+        & > li{
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+            font-weight: 400;
+        }
+    }
+
+    &__toggler{
+        grid-row: 1;
+        grid-column: 2;
+        width: 4.8rem;
+        height: 4.8rem;
+        border: 1px solid $gray1;
+        margin-left: auto;
+        margin-right: -0.1rem;
+        border-radius: 0.5rem;
     }
 }
