@@ -12,6 +12,11 @@ $grid-breakpoints: (
   xl: 1200px
 );
 
+@function breakpoint($breakpoint){
+  @return map-get($grid-breakpoints, $breakpoint)
+}
+
+
 $container-max-widths: (
   //xs: 100%
   sm: 540px,
