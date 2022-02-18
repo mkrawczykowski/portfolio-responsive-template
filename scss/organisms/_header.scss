@@ -2,6 +2,7 @@ header{
     background-color: $darkblue;
     padding-top: 1.6rem;
     padding-bottom: 3.9rem;
+    position: relative;
 
     @media (min-width: breakpoint(sm)){
         padding-bottom: 6.3em;
