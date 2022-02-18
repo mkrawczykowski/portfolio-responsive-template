@@ -4,7 +4,8 @@ header{
     padding-bottom: 3.9rem;
     position: relative;
 
-    @media (min-width: breakpoint(sm)){
+    @media (min-width: breakpoint(md)){
         padding-bottom: 6.3em;
+        position: static;
     }
 }

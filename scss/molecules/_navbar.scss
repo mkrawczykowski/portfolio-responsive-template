@@ -6,8 +6,8 @@
     font-family: 'Epilogue';
     padding: 0 2.4rem;
 
-    @media (min-width: breakpoint(sm)) {
-        grid-template-columns: 20% 60% 20%;
+    @media (min-width: breakpoint(md)) {
+        grid-template-columns: 23.4% 53.8% 22.7%;
         grid-template-rows: auto;
         padding: 0;
     }
@@ -18,6 +18,10 @@
         grid-row: 1;
         grid-column: 1;
         display: flex;
+
+        &:hover{
+            text-decoration: none;
+        }
 
         h2{
             font-size: 2.4rem;
@@ -46,10 +50,16 @@
         left: -100%;
         transition: all 0.3s ease;
 
-        @media (min-width: breakpoint(sm)){
+        @media (min-width: breakpoint(md)){
             grid-row: 1;
             grid-column-start: 2;
             flex-direction: row;
+            position: static;
+            background: none;
+            padding: 0;
+            align-items: flex-start;
+            justify-content: space-around;
+            margin-top: 1.3rem;
         }
 
         &--active{
@@ -68,64 +78,94 @@
             &:last-of-type{
                 padding: 1.5rem 0;
             }
+
+            @media (min-width: breakpoint(md)){
+                &:not(:last-of-type), &:last-of-type{
+                    padding: 0;
+                }
+            }
         }
     }
 
-    &__toggler{
+    &__toggler-button{
         grid-row: 1;
         grid-column: 2;
-        width: 4.8rem;
-        height: 4.8rem;
-        border: 1px solid $gray1;
-        margin-left: auto;
-        margin-right: -0.1rem;
-        border-radius: 0.5rem;
-        z-index: 2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
 
-        span{
-            background-color: $white;
-            width: 1.6rem;
-            height: 0.2rem;
-            border-radius: 2rem;
-            position: relative;
-            left: 1.5rem;
-            display: block;
-            transition: all 0.3s ease;
-
-            &:first-of-type{
-                top: -0.4rem;
-                transform: rotate(0);
-            }
-            &:nth-of-type(2){
-                top: 0;
-                opacity: 1;
-            }
-            &:nth-of-type(3){
-                top: 0.4rem;
-                transform: rotate(0);
-            }
+        @media (min-width: breakpoint(md)){
+            grid-column: 3;
         }
 
-        &--active{
+        .navbar__toggler{
+            width: 4.8rem;
+            height: 4.8rem;
+            border: 1px solid $gray1;
+            margin-left: auto;
+            margin-right: -0.1rem;
+            border-radius: 0.5rem;
+            z-index: 2;
+
+            @media (min-width: breakpoint(md)){
+                display: none;
+            }
+
             span{
-                width: 2rem;
-                left: 1.3rem;
+                background-color: $white;
+                width: 1.6rem;
+                height: 0.2rem;
+                border-radius: 2rem;
+                position: relative;
+                left: 1.5rem;
+                display: block;
                 transition: all 0.3s ease;
 
                 &:first-of-type{
-                    top: 0.2rem;
-                    left: 1.3rem;
-                    transform: rotate(45deg);
+                    top: -0.4rem;
+                    transform: rotate(0);
                 }
                 &:nth-of-type(2){
-                    opacity: 0;
+                    top: 0;
+                    opacity: 1;
                 }
                 &:nth-of-type(3){
-                    top: -0.2rem;
+                    top: 0.4rem;
+                    transform: rotate(0);
+                }
+            }
+
+            &--active{
+                span{
+                    width: 2rem;
                     left: 1.3rem;
-                    transform: rotate(-45deg);
+                    transition: all 0.3s ease;
+
+                    &:first-of-type{
+                        top: 0.2rem;
+                        left: 1.3rem;
+                        transform: rotate(45deg);
+                    }
+                    &:nth-of-type(2){
+                        opacity: 0;
+                    }
+                    &:nth-of-type(3){
+                        top: -0.2rem;
+                        left: 1.3rem;
+                        transform: rotate(-45deg);
+                    }
                 }
             }
         }
+
+        .button{
+            display: none;
+
+            @media (min-width: breakpoint(md)){
+                display: inline;
+            }
+        }        
     }
+
+
 }
