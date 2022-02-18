@@ -1,0 +1,28 @@
+.button{
+    border-radius: 0.5rem;
+    font-family: 'Epilogue';
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.7rem 3.5rem 1.4rem 3.5rem;
+    font-weight: 900;
+    display: inline-block;
+    text-align: center;
+
+    &:hover{
+        text-decoration: none;
+    }
+
+    &--light-no-background{
+        border: 1px solid $gray1;
+        color: $white;
+        transition: all 0.3s ease;
+
+        &:hover{
+            color: $darkblue;
+            background-color: $white;
+            border: 1px solid $white;
+            transition: all 0.3s ease;
+        }
+    }
+}

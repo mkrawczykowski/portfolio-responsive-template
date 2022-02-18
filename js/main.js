@@ -1,6 +1,4 @@
-// import './components/swiper';
-// import 'bootstrap/js/dist/carousel';
-// import './components/hp-splide-slider';
+import './components/main-menu-toggler';
 
 
 
