@@ -67,10 +67,16 @@ img {
   max-height: 100%;
 }
 
-.g-custom{
-  --bs-gutter-x: 2.3rem;
-}
-
 .hidden{
   display: none;
+}
+
+.col{
+  &--padding-xs-x{
+    @media (max-width: breakpoint(md)){
+      padding: 0 2.3rem;
+    }
+
+    padding: 0;
+  }
 }
