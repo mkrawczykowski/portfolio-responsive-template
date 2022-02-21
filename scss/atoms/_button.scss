@@ -1,5 +1,5 @@
 .button{
-    border-radius: 0.5rem;
+    border-radius: 0.6rem;
     font-family: 'Epilogue';
     font-size: 1.4rem;
     line-height: 1.5rem;
@@ -16,7 +16,6 @@
 
     &--light-no-background{
         border: 1px solid $gray1;
-
         transition: all 0.3s ease;
 
         &:hover{

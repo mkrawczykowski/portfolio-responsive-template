@@ -42,15 +42,27 @@
       </div>
       <div class="row header-content">
         <div class="col col-12 col-md-6 col--padding-xs-x">
-          <img srcset="./images/header-desktop.png 585w, ./images/header-mobile.png 329w">
+          <picture>
+            <source
+              srcset="./images/header-mobile-2x.png 2x, ./images/header-mobile.png"
+              media="(max-width: 375px)"
+            >
+            <source
+              srcset="./images/header-desktop@2x.png 2x, ./images/header-desktop.png"
+              media="(min-width: 376px)"
+            >
+            <img srcset="./images/header-desktop.png" src="./images/header-desktop.png" alt="">
+          </picture>
         </div>
         <div class="col col-12 col-md-6 col--padding-xs-x">
-          <h3>Modern Studio</h3>
-          <h1>We’re Help To Build Your Dream Project</h1>
-          <p>Agency provides a full service range including technical skills, design, business understanding.</p>
-          <div class="buttons">
-            <a href="" class="button button--color">How we work</a>
-            <a href="" class="button button--normal-link">Contact us</a>
+          <div class="headers-text header-text--light">
+            <h3>Modern Studio</h3>
+            <h1>We’re Help To Build Your Dream Project</h1>
+            <p>Agency provides a full service range including technical skills, design, business understanding.</p>
+            <div class="buttons">
+              <a href="" class="button button--color">How we work</a>
+              <a href="" class="button button--normal-link">Contact us</a>
+            </div>  
           </div>
         </div>
       </div>
