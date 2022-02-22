@@ -1,10 +1,14 @@
+@import "bootstrap-grid";
 @import "variables";
 @import "global";
 @import "fonts";
-@import "bootstrap-grid";
 
 @import "./atoms/button";
 
 @import "./molecules/navbar";
+@import "./molecules/buttons";
+@import "./molecules/header-content";
+@import "./molecules/headings-text";
+@import "./molecules/person-quote";
 
 @import "./organisms/header";

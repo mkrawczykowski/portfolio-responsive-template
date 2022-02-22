@@ -1,0 +1,71 @@
+.headings-text{
+    &__small-above{
+        color: $orange;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        font-family: 'Epilogue';
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        margin: 0 0 2rem 0;
+
+        @media (min-width: breakpoint(xl)){
+            margin: 0 0 2.3rem 0;
+        }
+    }
+
+    &__big{
+        font-family: 'Epilogue';
+        font-weight: 800;
+        text-transform: none;
+        margin: 0 0 1.2rem 0;
+        letter-spacing: -0.1rem;
+
+        @media (min-width: breakpoint(xl)){
+            letter-spacing: -0.2rem;
+            margin: 0 0 2.5rem 0;
+        }
+        
+        &--size{
+            &-big{
+                font-size: 5.6rem;
+                line-height: 6.4rem;
+                     
+                @media (min-width: breakpoint(lg)){
+                    font-size: 7.2rem;
+                    line-height: 8rem;                    
+                }
+            }
+        }
+    }
+
+    &__paragraph{
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        font-family: 'Epilogue';
+        font-weight: 400;
+        text-transform: none;
+        margin: 0 0 1.9rem 0;
+
+        @media (min-width: breakpoint(md)){
+            margin: 0 0 3.5rem 0;
+        }
+    }
+
+    &--light{
+        .headings-text__big{
+            color: $white;
+        }
+        .headings-text__paragraph{
+            color: $gray2;
+        }
+    }
+    &--dark{
+        .headings-text__big{
+            color: $darkbrown;
+        }
+        .headings-text__paragraph{
+            color: $darkbrown2;
+        }
+    }
+}
