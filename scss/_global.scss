@@ -71,12 +71,18 @@ img {
   display: none;
 }
 
+.container, .column{
+  box-sizing: border-box;
+}
+
 .col{
   &--padding-xs-x{
     @media (max-width: breakpoint(md)){
-      padding: 0 2.3rem;
+      padding-right: 2.3rem;
+      padding-left: 2.3rem;
     }
 
-    padding: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 }

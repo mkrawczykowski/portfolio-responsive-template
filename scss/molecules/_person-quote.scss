@@ -1,0 +1,51 @@
+.person-quote{
+    display: flex;
+
+    &__image{
+        img{
+            width: 100%;
+            height: auto;
+        }        
+    }
+
+    &--small{
+
+        .person-quote__image{
+            flex: 0 0 4.8rem;
+        }
+
+        .person-quote__text{
+            margin-left: 1.6rem;
+
+            &-quote{
+                font-size: 1.6rem;
+                line-height: 3.2rem;
+                color: $whitetransparent;
+                font-family: 'Epilogue';
+                font-weight: 400;
+                text-transform: none;
+                margin: -0.3rem 0 0 0;
+            }
+            &-person{
+                font-size: 1.6rem;
+                line-height: 3.2rem;
+                color: $white;
+                font-family: 'Epilogue';
+                font-weight: 400;
+                text-transform: none;
+                margin: 0.4rem 0 0 0;
+
+                @media (min-width: breakpoint(md)){
+                    margin: -0.4rem 0 0 0.5rem;
+                }
+            }
+        }
+    }
+
+    &--big{
+        .person-quote__image{
+            width: 6.4rem;
+            margin-right: 3rem;
+        }
+    }
+}

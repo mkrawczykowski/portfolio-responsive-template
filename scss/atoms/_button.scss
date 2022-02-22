@@ -4,14 +4,30 @@
     font-size: 1.4rem;
     line-height: 1.5rem;
     text-transform: uppercase;
-    padding: 1.7rem 3.5rem 1.4rem 3.5rem;
     font-weight: 900;
     display: inline-block;
     text-align: center;
     color: $white;
+    text-align: center;
+    line-height: 4.8rem;
     
     &:hover{
         text-decoration: none;
+    }
+
+    &--width-narrow{
+        width: 13.8rem;
+        height: 4.8rem;
+    }
+
+    &--width-medium{
+        width: 15.4rem;
+        height: 4.8rem;
+    }
+
+    &--width-wide{
+        width: 17.0rem;
+        height: 4.8rem;
     }
 
     &--light-no-background{
@@ -42,6 +58,7 @@
     &--normal-link{
         text-transform: none;
         font-weight: 400;
+        font-size: 1.6rem;
 
         &:hover{
             text-decoration: underline;
