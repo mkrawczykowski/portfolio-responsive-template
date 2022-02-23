@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./dist/main.css">
+  <title><?php the_title(); ?></title>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/dist/main.css' ?>">
+  <?php
+    wp_head();
+?>
 </head>
 
 <body>
@@ -15,16 +18,18 @@
         <div class="col">
           <nav class="navbar">
             <a href="" class="navbar__brand">
-              <img src="./images/logo.svg" alt="Portfolio responsive template">
+              <img src="<?php echo get_template_directory_uri() . '/images/logo.svg' ?>" alt="logo">
               <h2>Agency</h2>
             </a>
-              
-            <ul class="navbar__main-menu">
-              <li><a href="#">About</a></li> 
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
+            <?php 
+                wp_nav_menu(
+                    array( 
+                        'theme_location' => 'header-menu', 
+                        'menu_class' => 'navbar__main-menu',  
+                        'container' => ''
+                    )
+                ); 
+            ?>
             
             <div class="navbar__toggler-button">
               <button class="navbar__toggler">
@@ -56,12 +61,14 @@
         </div>
         <div class="col col-sm-8 col-md-6 col--padding-xs-x">
           <div class="headings-text headings-text--light">
-            <h3 class="headings-text__small-above">Modern Studio</h3>
-            <h1 class="headings-text__big headings-text__big--size-big">We’re Here To Build Your Dream Project</h1>
-            <p class="headings-text__paragraph">Agency provides a full service range including technical skills, design, business understanding.</p>
+            <h3 class="headings-text__small-above"><?php the_field('small-heading', 'options'); ?></h3>
+            <h1 class="headings-text__big headings-text__big--size-big"><?php the_field('big-heading', 'options'); ?></h1>
+            <p class="headings-text__paragraph"><?php the_field('paragraph', 'options'); ?></p>
             <div class="buttons">
-              <a href="" class="button button--color button--width-medium">How we work</a>
-              <a href="" class="button button--normal-link button--width-wide">Contact us</a>
+              <a href="<?php the_field('button-1__url', 'options'); ?>" class="button button--color button--width-medium"><?php the_field('button-1__text', 'options'); ?></a>
+                <?php if (get_field('button-2__enable', 'options') ) : ?>
+                    <a href="<?php the_field('button-2__url', 'options'); ?>" class="button button--normal-link button--width-wide"><?php the_field('button-2__text', 'options'); ?></a>
+                <?php endif; ?>
             </div>  
           </div>
 
@@ -79,25 +86,3 @@
     </div>
 
   </header>
-
-  <main>
-<section class="logos-list background-beige">
-  <div class="container">
-    <div class="row">
-      <div class="col col--padding-xs-x">
-        <ul class="logos-list__list">
-          <li><img src="./images/logo-digitalside.png" alt="logo Digitalside"></li>
-          <li><img src="./images/logo-vortex.png" alt="logo Vortex"></li>
-          <li><img src="./images/logo-travel-explorer.png" alt="logo Travel Explorer"></li>
-          <li><img src="./images/logo-fusion.png" alt="logo Fusion"></li>
-          <li><img src="./images/logo-mediafury.png" alt="logo Mediafury"></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-  </main>
-  <script src="./dist/app.js"></script>
-</body>
-
-</html>
