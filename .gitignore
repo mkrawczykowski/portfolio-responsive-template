@@ -1,4 +1,3 @@
-/node_modules
-/assets/dist
-/npm-debug.log
-/dist
+!/plugins
+/plugins/*
+!/plugins/portfolio-gutenberg-blocks
