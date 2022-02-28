@@ -36,8 +36,31 @@
                     line-height: 8rem;                    
                 }
             }
+            &-medium{
+                font-size: 4.0rem;
+                line-height: 4.8rem;
+                     
+                @media (min-width: breakpoint(lg)){
+                    font-size: 5.6rem;
+                    line-height: 6.4rem;                    
+                }
+            }
         }
     }
+
+    &__small-below{
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        font-family: 'Epilogue';
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        margin: 0 0 2rem 0;
+
+        @media (min-width: breakpoint(xl)){
+            margin: 0 0 2.3rem 0;
+        }
+    }    
 
     &__paragraph{
         font-size: 1.6rem;
@@ -56,12 +79,18 @@
         .headings-text__big{
             color: $white;
         }
+        .headings-text__small-below{
+            color: $darkbrown;
+        }
         .headings-text__paragraph{
             color: $gray2;
         }
     }
     &--dark{
         .headings-text__big{
+            color: $darkbrown;
+        }
+        .headings-text__small-below{
             color: $darkbrown;
         }
         .headings-text__paragraph{
