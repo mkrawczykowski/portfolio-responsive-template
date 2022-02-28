@@ -42,21 +42,10 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
-// add_action('acf/init', 'my_acf_init_block_types');
-// function my_acf_init_block_types() {
 
-//     // Check function exists.
-//     if( function_exists('acf_register_block_type') ) {
 
-//         // register a testimonial block.
-//         acf_register_block_type(array(
-//             'name'              => 'logos-list',
-//             'title'             => __('Logos list'),
-//             'description'       => __('Block with list of logos'),
-//             'render_template'   => 'blocks/logos-list/logos-list.php',
-//             'category'          => 'formatting',
-//             'icon'              => 'admin-comments',
-//             'keywords'          => array( 'testimonial', 'quote' ),
-//         ));
-//     }
-// }
+add_filter('acf/settings/save_json', 'my_acf_json_save_point');
+function my_acf_json_save_point( $path ) {
+    $path = get_stylesheet_directory() . '/acf-json';
+    return $path;
+}

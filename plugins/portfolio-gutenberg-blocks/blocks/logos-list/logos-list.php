@@ -1,4 +1,4 @@
-<?
+<?php
 
 $id = 'logos-list-' . $block['id'];
 if( !empty($block['anchor']) ) {
@@ -10,10 +10,10 @@ if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
 
-if( have_rows('logos') ): 
-    $backgroundColor = get_field('background-color');
+if( have_rows('logos') ):
+    $backgroundColor = get_field('background-color');   
 ?>
-    <section class="logos-list background-<?php echo $backgroundColor; ?>" id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?>">
+    <section class="logos-list background-<?php echo $backgroundColor; ?> <?php echo esc_attr($className); ?>" id="<?php echo esc_attr($id); ?>">
         <div class="container">
             <div class="row">
                 <div class="col col--padding-xs-x">
@@ -34,3 +34,7 @@ if( have_rows('logos') ):
             </div>
         </div>
     </section>
+
+<?php
+    endif;
+?>
