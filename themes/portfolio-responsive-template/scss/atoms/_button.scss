@@ -55,6 +55,20 @@
         }
     }
 
+    &--white-with-shadow{
+        box-shadow: 8px 3px 9px 0px rgba(57, 20, 0, 0.8);
+        border: none;
+        background-color: $white;
+        transition: all 0.3s ease;
+        color: $black;
+
+        &:hover{
+            color: $white;
+            background-color: $purple;
+            transition: all 0.3s ease;
+        }
+    }
+
     &--normal-link{
         text-transform: none;
         font-weight: 400;
