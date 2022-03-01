@@ -30,7 +30,7 @@ if( !empty($block['className']) ) {
             </div>
             <div class="col-12 col-md-6">
 
-            <div class="headings-text headings-text--dark">
+            <div class="headings-text headings-text--colors-dark headings-text--size-medium">
                 <h3 class="headings-text__small-above"><?php the_field('small-heading-above'); ?></h3>
                 <h1 class="headings-text__big headings-text__big--size-medium"><?php the_field('big-heading'); ?></h1>
                 <h3 class="headings-text__small-below"><?php the_field('small-heading-below'); ?></h3>

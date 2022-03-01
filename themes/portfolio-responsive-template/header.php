@@ -39,7 +39,7 @@
 
               <a href="#"class="button button--light-no-background button--width-narrow">
                 Contact
-              </a>              
+              </a>
             </div>
           </nav>
         </div>
@@ -59,9 +59,9 @@
           </picture>
         </div>
         <div class="col col-sm-8 col-md-6 col--padding-xs-x">
-          <div class="headings-text headings-text--light">
+          <div class="headings-text headings-text--colors-light headings-text--size-big">
             <h3 class="headings-text__small-above"><?php the_field('small-heading', 'options'); ?></h3>
-            <h1 class="headings-text__big headings-text__big--size-big"><?php the_field('big-heading', 'options'); ?></h1>
+            <h1 class="headings-text__big"><?php the_field('big-heading', 'options'); ?></h1>
             <p class="headings-text__paragraph"><?php the_field('paragraph', 'options'); ?></p>
             <div class="buttons">
               <a href="<?php the_field('button-1__url', 'options'); ?>" class="button button--color button--width-medium"><?php the_field('button-1__text', 'options'); ?></a>

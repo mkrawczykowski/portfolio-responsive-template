@@ -7,7 +7,6 @@
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 0.3rem;
-        margin: 0 0 2rem 0;
 
         @media (min-width: breakpoint(xl)){
             margin: 0 0 2.3rem 0;
@@ -25,36 +24,13 @@
             letter-spacing: -0.2rem;
             margin: 0 0 2.5rem 0;
         }
-        
-        &--size{
-            &-big{
-                font-size: 5.6rem;
-                line-height: 6.4rem;
-                     
-                @media (min-width: breakpoint(lg)){
-                    font-size: 7.2rem;
-                    line-height: 8rem;                    
-                }
-            }
-            &-medium{
-                font-size: 4.0rem;
-                line-height: 4.8rem;
-                     
-                @media (min-width: breakpoint(lg)){
-                    font-size: 5.6rem;
-                    line-height: 6.4rem;                    
-                }
-            }
-        }
     }
 
     &__small-below{
-        font-size: 1.6rem;
+        font-size: 2.0rem;
         line-height: 3.2rem;
         font-family: 'Epilogue';
         font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 0.3rem;
         margin: 0 0 2rem 0;
 
         @media (min-width: breakpoint(xl)){
@@ -75,7 +51,67 @@
         }
     }
 
-    &--light{
+    // ================================ SIZES ================================ //
+
+    &--size-big{
+        .headings-text__small-above{
+            margin: 0 0 2rem 0;
+
+            @media (min-width: breakpoint(lg)){
+                margin: 0 0 2.3rem 0;
+            }
+        }
+        .headings-text__big{
+            margin: 0 0 2.9rem 0;
+            font-size: 5.6rem;
+            line-height: 6.4rem;
+                     
+            @media (min-width: breakpoint(lg)){
+                margin: 0 0 2.5rem 0;
+                font-size: 7.2rem;
+                line-height: 8rem;                    
+            }
+        }
+        .headings-text__small-below{
+
+        }
+
+        .small-below__paragraph{
+
+        }
+    }
+
+    &--size-medium{
+        .headings-text__small-above{
+            margin: 0 0 1.8rem 0;
+
+            @media (min-width: breakpoint(lg)){
+                margin: 0 0 2.1rem 0;
+            }
+        }
+
+        .headings-text__big{
+            letter-spacing: 0;
+            font-size: 4.0rem;
+            line-height: 4.8rem;
+            margin: 0 0 2.9rem 0;
+                        
+            @media (min-width: breakpoint(lg)){
+                font-size: 5.6rem;
+                line-height: 6.4rem;
+                margin: 0 0 2.5rem 0;
+                letter-spacing: -0.1rem;   
+            }            
+        }
+
+        .headings-text__small-below{
+            margin: 0 0 1.8rem 0;
+        }
+    }
+
+    // ================================ COLORS =============================== //    
+
+    &--colors-light{
         .headings-text__big{
             color: $white;
         }
@@ -86,7 +122,8 @@
             color: $gray2;
         }
     }
-    &--dark{
+
+    &--colors-dark{
         .headings-text__big{
             color: $darkbrown;
         }
