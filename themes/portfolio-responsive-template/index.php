@@ -65,6 +65,23 @@
     </section>
 
 
+    <section class="portfolio-filtering background-darkblue">
+        <div class="headings-text headings-text--colors-light headings-text--size-medium headings-text--align-center">
+            <h3 class="headings-text__small-above">test</h3>
+            <h2 class="headings-text__big headings-text__big--size-medium">heading</h2>
+        </div>
+
+        <ul class="portfolio-filtering__categories">
+            <li><a href="">Show all<span>12</span></a></li>
+            <li><a href="">Design<span>3</span></a></li>
+            <li><a href="">Branding<span>9</span></a></li>
+            <li><a href="">Illustration<span>11</span></a></li>
+            <li><a href="">Motion<span4</span></a></li>
+        </ul>
+
+    </section>
+
+
 
 
 
