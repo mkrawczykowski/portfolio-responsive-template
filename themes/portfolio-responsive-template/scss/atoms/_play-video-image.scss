@@ -1,0 +1,53 @@
+.play-video-image{
+    position: relative;
+
+    &__button{
+        width: 14.8rem;
+        height: 14.8rem;
+        border: 1px solid $white;
+        position: absolute;
+        top: calc(50% - 7.4rem);
+        right: calc(50% - 7.4rem);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        &:hover{
+            transition: all 0.3s ease;
+            width: 12.8rem;
+            height: 12.8rem;
+            top: calc(50% - 6.4rem);
+            right: calc(50% - 6.4rem);
+            cursor: pointer;
+
+            svg{
+                transition: all 0.3s ease;
+                transform: scale(1.3);
+            }
+        }
+
+        svg{
+            transition: all 0.3s ease;
+            transform: scale(1);
+            position: relative;
+            left: 0.4rem;
+        }
+    }
+
+    &__time{
+        background-color: rgba(87,11,0,0.24);
+        border-radius: 0.6rem;
+        position: absolute;
+        padding: 0 1rem;
+        bottom: 2.2rem;
+        left: 2.4rem;
+        color: $white;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        font-family: 'Epilogue';
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+}

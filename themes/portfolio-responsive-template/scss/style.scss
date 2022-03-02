@@ -4,11 +4,13 @@
 @import "fonts";
 
 @import "./atoms/button";
+@import "./atoms/play-video-image";
 
 @import "./molecules/navbar";
 @import "./molecules/buttons";
 @import "./molecules/header-content";
 @import "./molecules/headings-text";
 @import "./molecules/person-quote";
+@import "./molecules/video-lightbox-content";
 
 @import "./organisms/header";
