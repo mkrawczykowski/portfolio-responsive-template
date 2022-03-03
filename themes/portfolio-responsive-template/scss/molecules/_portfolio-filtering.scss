@@ -1,3 +1,117 @@
-.portfolio-filtering{
-    
+.portfolio-filtering {
+  padding: 10rem 0;
+  &__categories {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+      font-size: 1.6rem;
+      line-height: 3.2rem;
+      font-family: "Epilogue";
+      font-weight: 400;
+      text-transform: none;
+      margin: 0;
+      color: $gray2;
+      position: relative;
+
+      &:not(:last-of-type):not(:first-of-type) {
+        padding: 0 3.1rem;
+
+        span {
+          right: 0;
+          top: -0.5rem;
+        }
+      }
+
+      &:last-of-type {
+        padding: 0 0.8rem 0 3.1rem;
+
+        span {
+          right: 0;
+          top: -0.5rem;
+        }
+      }
+
+      &:first-of-type {
+        padding: 0 3.1rem 0 0;
+
+        span {
+          right: 0;
+          top: -0.5rem;
+        }
+      }
+
+      span {
+        position: absolute;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__posts {
+    &-row {
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: breakpoint(lg)) {
+        flex-direction: row;
+      }
+
+      .portfolio-filtering__post {
+        background-image: url("../images/portfolio.jpg");
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 3rem;
+      }
+
+      &--right-wider {
+        .portfolio-filtering__post {
+          &:nth-of-type(1) {
+            margin-right: 0;
+
+            @media (min-width: breakpoint(lg)) {
+              margin-right: 1.5rem;
+              flex: 0 0 47rem;
+            }
+          }
+
+          &:nth-of-type(2) {
+            margin-right: 0;
+
+            @media (min-width: breakpoint(lg)) {
+              margin-left: 1.5rem;
+              flex: 0 0 67rem;
+            }
+          }
+        }
+      }
+
+      &--left-wider {
+        .portfolio-filtering__post {
+          &:nth-of-type(1) {
+            margin-right: 0;
+
+            @media (min-width: breakpoint(lg)) {
+              margin-right: 1.5rem;
+              flex: 0 0 67rem;
+            }
+          }
+          &:nth-of-type(2) {
+            margin-right: 0;
+
+            @media (min-width: breakpoint(lg)) {
+              margin-left: 1.5rem;
+              flex: 0 0 47rem;
+            }
+          }
+        }
+      }
+
+      a {
+        height: 41.6rem;
+      }
+    }
+  }
 }

@@ -66,19 +66,50 @@
 
 
     <section class="portfolio-filtering background-darkblue">
-        <div class="headings-text headings-text--colors-light headings-text--size-medium headings-text--align-center">
-            <h3 class="headings-text__small-above">test</h3>
-            <h2 class="headings-text__big headings-text__big--size-medium">heading</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col--padding-xs-x">
+
+                <div class="headings-text headings-text--colors-light headings-text--size-medium headings-text--align-center">
+                        <h3 class="headings-text__small-above">test</h3>
+                        <h2 class="headings-text__big headings-text__big--size-medium">heading</h2>
+                    </div>
+
+                    <ul class="portfolio-filtering__categories">
+                        <li><a href="#" data-slug="all">Show all<span>12</span></a></li>
+                        <li><a href="#" data-slug="design">Design<span>3</span></a></li>
+                        <li><a href="#" data-slug="branding">Branding<span>9</span></a></li>
+                        <li><a href="#" data-slug="illustration">Illustration<span>11</span></a></li>
+                        <li><a href="#" data-slug="motion">Motion<span>4</span></a></li>
+                    </ul>
+
+                    <div class="portfolio-filtering__categories-dropdown dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    </div>
+
+                    <div class="portfolio-filtering__posts">
+                        <div class="portfolio-filtering__posts-row portfolio-filtering__posts-row--right-wider">
+                            <a href="" class="portfolio-filtering__post"><h4>Design</h4><h3>Sofa</h3></a>
+                            <a href="" class="portfolio-filtering__post"><h4>Design</h4><h3>Sofa</h3></a>
+                        </div>
+                        <div class="portfolio-filtering__posts-row portfolio-filtering__posts-row--left-wider">
+                            <a href="" class="portfolio-filtering__post"><h4>Design</h4><h3>Sofa</h3></a>
+                            <a href="" class="portfolio-filtering__post"><h4>Design</h4><h3>Sofa</h3></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-filtering__button">Explore more</div>
+
+                </div>
+            </div>
         </div>
-
-        <ul class="portfolio-filtering__categories">
-            <li><a href="">Show all<span>12</span></a></li>
-            <li><a href="">Design<span>3</span></a></li>
-            <li><a href="">Branding<span>9</span></a></li>
-            <li><a href="">Illustration<span>11</span></a></li>
-            <li><a href="">Motion<span4</span></a></li>
-        </ul>
-
     </section>
 
 
