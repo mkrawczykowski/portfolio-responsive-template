@@ -95,14 +95,10 @@
                     </div>
 
                     <div class="portfolio-filtering__posts">
-                        <div class="portfolio-filtering__posts-row portfolio-filtering__posts-row--right-wider">
-                            <a href="" class="portfolio-filtering__post"><h4>Design</h4><h3>Sofa</h3></a>
-                            <a href="" class="portfolio-filtering__post"><h4>Design</h4><h3>Sofa</h3></a>
-                        </div>
-                        <div class="portfolio-filtering__posts-row portfolio-filtering__posts-row--left-wider">
-                            <a href="" class="portfolio-filtering__post"><h4>Design</h4><h3>Sofa</h3></a>
-                            <a href="" class="portfolio-filtering__post"><h4>Design</h4><h3>Sofa</h3></a>
-                        </div>
+                        <a href="" class="portfolio-filtering__post"><h4>Design</h4><h3>Sofa</h3></a>
+                        <a href="" class="portfolio-filtering__post portfolio-filtering__post--wide"><h4>Design</h4><h3>Sofa</h3></a>
+                        <a href="" class="portfolio-filtering__post portfolio-filtering__post--wide"><h4>Design</h4><h3>Sofa</h3></a>
+                        <a href="" class="portfolio-filtering__post"><h4>Design</h4><h3>Sofa</h3></a>
                     </div>
 
                     <div class="portfolio-filtering__button">Explore more</div>
