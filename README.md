@@ -30,3 +30,32 @@ The project's designer created header image in two versions. The versions have d
 I decided to use picture element to this. This way, I could also create 2x versions for each image to make it look better on Retina screens.
 <br><br>**source:** [header.php](https://github.com/mkrawczykowski/portfolio-responsive-template/blob/master/themes/portfolio-responsive-template/header.php#L51)
 <br><br><br>
+
+## ACF fields stored in JSON files
+What else can I say here? ;)
+<br><br>**source:** [folder /acf-json](https://github.com/mkrawczykowski/portfolio-responsive-template/tree/master/themes/portfolio-responsive-template/acf-json)
+<br><br><br>
+
+## SCSS with BEM
+Standard BEM, only the block's molecules are being moved to plugin's folder. 
+<br><br>**source:** [/scss folder](https://github.com/mkrawczykowski/portfolio-responsive-template/tree/master/themes/portfolio-responsive-template/scss)
+<br><br><br>
+
+## Block with DIY lightbox
+- with document.body.style.overflow = 'hidden'; added. :)
+- support for multiple lightblock blocks used on one page
+- YT player embedded in lightbox using Youtube API
+- YT player's ratio is being calculated based on offsetWidth of lightbox's content
+<br><br>**source:** [video-lightbox.js](https://github.com/mkrawczykowski/portfolio-responsive-template/blob/master/themes/portfolio-responsive-template/js/components/video-lightbox.js)
+<br><br><br>
+
+
+## Bootstrap 4 grid (bootstrap-grid)
+I only used grid for now as this is my favourite feature of Bootstrap.
+<br><br>
+Coming soon: some Bootstrap components.
+<br><br><br>
+
+## ...and more:
+- custom image sizes registered in Wordpress for 1x and 2x images
+- mobile first coding
