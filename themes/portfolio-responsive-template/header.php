@@ -46,17 +46,32 @@
       </div>
       <div class="row header-content">
         <div class="col col-sm-4 col-md-6 col--padding-xs-x">
+          
+          <?php 
+            $imageDesktop = get_field('header-image-desktop', 'options');
+
+            if( !empty( $imageDesktop ) ):
+              $alt = $imageDesktop['alt'];
+              $desktop2x = $imageDesktop['sizes'][ 'header-desktop-2x' ];
+              $desktop1x = $imageDesktop['sizes'][ 'header-desktop-1x' ];
+          ?>
           <picture>
-            <source
-              srcset="./images/header-mobile-2x.png 2x, ./images/header-mobile.png"
-              media="(max-width: 375px)"
-            >
-            <source
-              srcset="./images/header-desktop@2x.png 2x, ./images/header-desktop.png"
-              media="(min-width: 376px)"
-            >
-            <img srcset="./images/header-desktop.png" src="./images/header-desktop.png" alt="">
+            
+
+            <?php
+              $imageMobile = get_field('header-image-mobile', 'options');
+              if( !empty( $imageMobile ) ):
+                $mobile2x = $imageMobile['sizes'][ 'header-mobile-2x' ];
+                $mobile1x = $imageMobile['sizes'][ 'header-mobile-1x' ];
+              ?>
+              <source srcset="<?php echo $mobile2x; ?> 2x,  <?php echo $mobile1x; ?>" media="(max-width: 375px)">
+              <source srcset="<?php echo $desktop2x; ?> 2x,  <?php echo $desktop2x; ?>" media="(min-width: 375px)">
+            <?php endif; ?>
+
+            <img src="<?php echo $desktop1x; ?>" alt="<?php echo $imageDesktop['alt']; ?>">
           </picture>
+          <?php endif; ?>
+  
         </div>
         <div class="col col-sm-8 col-md-6 col--padding-xs-x">
           <div class="headings-text headings-text--colors-light headings-text--size-big">
@@ -73,7 +88,11 @@
 
           <div class="person-quote person-quote--small person-quote--light">
             <div class="person-quote__image">
-              <img src="./images/person-small.png" alt="Person Small Jr.">
+            <?php 
+              $imagePerson = get_field('quotation__photo', 'options');
+              if( !empty( $imagePerson ) ): ?>
+                  <img src="<?php echo esc_url($imagePerson['url']); ?>" alt="<?php echo esc_attr($imagePerson['alt']); ?>" />
+            <?php endif; ?>
             </div>
             <div class="person-quote__text">
               <p class="person-quote__text-quote">"Put themselves in the merchant's shoes"</p>
