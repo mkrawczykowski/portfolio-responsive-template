@@ -7,7 +7,7 @@
 Here are some images you can use to check it yourself:
 - header: [desktop](https://portfolio-responsive-template.stronyireszta.pl/prtscr/header-desktop.png) and [mobile](https://portfolio-responsive-template.stronyireszta.pl/prtscr/header-mobile.png)
 - more examples coming soon
-<br><br>
+<br><br><br>
 
 
 ## My Gutenberg blocks (made with ACF Pro) in a Wordpress plugin
@@ -16,17 +16,17 @@ Googling Stackoverflow was very helpful here :)
 <br><br>
 I don't think this is the best idea possible, but that's what I managed to figure out for now.
 <br><br>**source:** [webpack.config.js](https://github.com/mkrawczykowski/portfolio-responsive-template/blob/master/plugins/portfolio-gutenberg-blocks/webpack.config.js#L9)
-<br><br>
+<br><br><br>
 
 
 ## Adding a new blocks - acf_register_block_type with foreach loop
 Adding a block is simple as I created a foreach loop that loops through an array of arrays - each of which is a different block.
 <br><br>**source:** [portfolio-gutenberg-blocks.php](https://github.com/mkrawczykowski/portfolio-responsive-template/blob/master/plugins/portfolio-gutenberg-blocks/portfolio-gutenberg-blocks.php#L17)
-<br><br>
+<br><br><br>
 
 ## Images ready for Retina screens (2x only) and different image on desktop and mobiles
 The project's designer created header image in two versions. The versions have different ratios, so I had to include both of them in my project to make my coded website as much pixel perfect as I can.
 <br><br>
 I decided to use <picture> element to this. This way, I could also create 2x versions for each image to make it look better on Retina screens.
 <br><br>**source:** [header.php](https://github.com/mkrawczykowski/portfolio-responsive-template/blob/master/themes/portfolio-responsive-template/header.php#L51)
-<br><br>
+<br><br><br>
