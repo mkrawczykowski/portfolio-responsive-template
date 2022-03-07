@@ -2,6 +2,8 @@
 
 **Project file:** https://laaqiq.gumroad.com/l/bkhPD<br>
 **Demo site:** https://portfolio-responsive-template.stronyireszta.pl/
+<br><br><br>
+
 
 ## (Almost) pixel perfect
 Here are some images you can use to check it yourself:
