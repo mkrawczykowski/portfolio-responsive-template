@@ -7,10 +7,6 @@
         the_content();
     ?>
 
-
-
-
-
     <section class="video-lightbox-content" data-video="M7lc1UVf-VE">
         <div class="container">
             <div class="row">
@@ -63,11 +59,6 @@
             }
         ?>
     </section>
-
-
-
-
-
 </main>
 
 <?php

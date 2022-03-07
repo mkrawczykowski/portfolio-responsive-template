@@ -56,18 +56,19 @@
               $desktop1x = $imageDesktop['sizes'][ 'header-desktop-1x' ];
           ?>
           <picture>
-            <source srcset="<?php echo $desktop2x; ?> 2x,  <?php echo $desktop2x; ?>" media="(min-width: 375px)">
+            
 
             <?php
               $imageMobile = get_field('header-image-mobile', 'options');
               if( !empty( $imageMobile ) ):
                 $mobile2x = $imageMobile['sizes'][ 'header-mobile-2x' ];
-                $moibile1x = $imageMobile['sizes'][ 'header-mobile-1x' ];
+                $mobile1x = $imageMobile['sizes'][ 'header-mobile-1x' ];
               ?>
-              <source srcset="<?php echo $mobile1x; ?> 2x,  <?php echo $moibile1x; ?>" media="(max-width: 375px)">
+              <source srcset="<?php echo $mobile2x; ?> 2x,  <?php echo $mobile1x; ?>" media="(max-width: 375px)">
+              <source srcset="<?php echo $desktop2x; ?> 2x,  <?php echo $desktop2x; ?>" media="(min-width: 375px)">
             <?php endif; ?>
 
-            <img srcset="<?php echo $desktop2x; ?>" src="<?php echo $desktop2x; ?>" alt="<?php echo $imageDesktop['alt']; ?>">
+            <img src="<?php echo $desktop1x; ?>" alt="<?php echo $imageDesktop['alt']; ?>">
           </picture>
           <?php endif; ?>
   
