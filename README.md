@@ -1,6 +1,6 @@
 # Wordpress website based on Adobe XD project (work in progress)
 
-**Project file:** https://laaqiq.gumroad.com/l/bkhPD
+**Project file:** https://laaqiq.gumroad.com/l/bkhPD<br>
 **Demo site:** https://portfolio-responsive-template.stronyireszta.pl/
 
 ## (Almost) pixel perfect
