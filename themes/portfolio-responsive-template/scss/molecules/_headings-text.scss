@@ -134,4 +134,21 @@
             color: $darkbrown2;
         }
     }
+
+    // ================================ COLORS =============================== // 
+
+    &--align-center{
+        .headings-text__small-above{
+            text-align: center;
+        }        
+        .headings-text__big{
+            text-align: center;
+        }
+        .headings-text__small-below{
+            text-align: center;
+        }
+        .headings-text__paragraph{
+            text-align: center;
+        }
+    }
 }
