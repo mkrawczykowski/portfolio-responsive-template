@@ -1,11 +1,10 @@
 # Wordpress website based on Adobe XD project (work in progress)
 
-Project file can be found on https://laaqiq.gumroad.com/l/bkhPD
+Project file: https://laaqiq.gumroad.com/l/bkhPD
+Demo site: 
 
-### Features
-- custom Gutenberg modules created using ACF Pro as a Wordpress plugin
-- SCSS using BEM methodology
-- (almost) pixel perfect
-- fully Wordpress compatible (e.g. Wordpress menu support, custom post types, etc.)
+## (Almost) pixel perfect
+Here are some images you can use to check it yourself:
+- header: [desktop](https://portfolio-responsive-template.stronyireszta.pl/prtscr/header-desktop.png) and [mobile](https://portfolio-responsive-template.stronyireszta.pl/prtscr/header-mobile.png)
+- more examples coming soon
 
-More description soon.
