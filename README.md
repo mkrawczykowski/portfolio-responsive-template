@@ -25,8 +25,8 @@ Adding a block is simple as I created a foreach loop that loops through an array
 <br><br>
 
 ## Images ready for Retina screens (2x only) and different image on desktop and mobiles
-The project's designer created header image in two versions. The versions have different ratios, so I had to include both of them in my projekt to make my coded website as much pixel perfect as I can.
+The project's designer created header image in two versions. The versions have different ratios, so I had to include both of them in my project to make my coded website as much pixel perfect as I can.
 <br><br>
 I decided to use <picture> element to this. This way, I could also create 2x versions for each image to make it look better on Retina screens.
-  **source:** 
+  **source:** [header.php](https://github.com/mkrawczykowski/portfolio-responsive-template/blob/master/themes/portfolio-responsive-template/header.php#L51)
   <br><br>
