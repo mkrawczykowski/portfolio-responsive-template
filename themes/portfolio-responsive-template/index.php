@@ -74,7 +74,34 @@
                         <h3 class="headings-text__small-above">test</h3>
                         <h2 class="headings-text__big headings-text__big--size-medium">heading</h2>
                     </div>
+<?php
+                    $cat_args = array (
+    'taxonomy' => 'category',
+);
+$categories = get_categories ( $cat_args );
+$totalPortfolioPosts = $count_posts = wp_count_posts( 'portfolio' )->publish;
+echo $totalPortfolioPosts;
+foreach ( $categories as $category ) {
+    $cat_query = null;
+    $args = array (
+        'order' => 'ASC',
+        'orderby' => 'title',
+        'posts_per_page' => -1,
+        'post_type' => 'portfolio',
+        'taxonomy' => 'category',
+        'term' => $category->slug
+    );
 
+    $cat_query = new WP_Query( $args );
+
+    if ( $cat_query->have_posts() ) {
+        echo "<h3>". $category->name ."</h3>";
+        echo "<h5>". $category->count ."</h5>";
+        // var_dump($category);
+    }
+    wp_reset_postdata();
+}?>
+                    
                     <ul class="portfolio-filtering__categories">
                         <li><a href="#" data-slug="all">Show all<span>12</span></a></li>
                         <li><a href="#" data-slug="design">Design<span>3</span></a></li>
