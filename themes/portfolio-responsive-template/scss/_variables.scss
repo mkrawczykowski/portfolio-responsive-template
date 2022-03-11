@@ -1,14 +1,16 @@
 $white: #ffffff;
 $black: #000000;
-$whitetransparent: rgba(255,255,255,0.64);
-$orange: #EF6D58;
+$whitetransparent: rgba(255, 255, 255, 0.64);
+$whitetransparent2: rgba(255, 255, 255, 0.29);
+$whitetransparent3: rgba(255, 255, 255, 0.1);
+$orange: #ef6d58;
 $darkbrown: #391400;
-$darkbrown2: rgba(57,20,0,0.64);
-$purple: #B550F8;
-$darkblue: #28293E;
+$darkbrown2: rgba(57, 20, 0, 0.64);
+$purple: #b550f8;
+$darkblue: #28293e;
 $gray1: #676877;
-$gray2: rgba(255,255,255,0.64);
-$beige: #FDF0E9;
+$gray2: rgba(255, 255, 255, 0.64);
+$beige: #fdf0e9;
 
 $grid-gutter-width: 3rem !default;
 
@@ -18,13 +20,12 @@ $grid-breakpoints: (
   //meaning: "SM starts from 576px of screen width"
   md: 768px,
   lg: 992px,
-  xl: 1200px
+  xl: 1200px,
 );
 
-@function breakpoint($breakpoint){
-  @return map-get($grid-breakpoints, $breakpoint)
+@function breakpoint($breakpoint) {
+  @return map-get($grid-breakpoints, $breakpoint);
 }
-
 
 $container-max-widths: (
   //xs: 100%
