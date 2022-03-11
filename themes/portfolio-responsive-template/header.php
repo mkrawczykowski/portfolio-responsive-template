@@ -56,7 +56,6 @@
               $desktop1x = $imageDesktop['sizes'][ 'header-desktop-1x' ];
           ?>
           <picture>
-            
 
             <?php
               $imageMobile = get_field('header-image-mobile', 'options');
