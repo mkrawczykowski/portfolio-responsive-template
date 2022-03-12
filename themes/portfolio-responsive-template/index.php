@@ -60,77 +60,6 @@
         ?>
     </section>
 
-
-    <section class="portfolio-filtering background-darkblue">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col--padding-xs-x">
-
-                <div class="headings-text headings-text--colors-light headings-text--size-medium headings-text--align-center">
-                        <h3 class="headings-text__small-above">test</h3>
-                        <h2 class="headings-text__big headings-text__big--size-medium">heading</h2>
-                    </div>
-<?php
-                    $cat_args = array (
-    'taxonomy' => 'category',
-);
-$categories = get_categories ( $cat_args );
-$totalPortfolioPosts = $count_posts = wp_count_posts( 'portfolio' )->publish;
-echo $totalPortfolioPosts;
-foreach ( $categories as $category ) {
-    $cat_query = null;
-    $args = array (
-        'order' => 'ASC',
-        'orderby' => 'title',
-        'posts_per_page' => -1,
-        'post_type' => 'portfolio',
-        'taxonomy' => 'category',
-        'term' => $category->slug
-    );
-
-    $cat_query = new WP_Query( $args );
-
-    if ( $cat_query->have_posts() ) {
-        echo "<h3>". $category->name ."</h3>";
-        echo "<h5>". $category->count ."</h5>";
-        // var_dump($category);
-    }
-    wp_reset_postdata();
-}?>
-                    
-                    <ul class="portfolio-filtering__categories">
-                        <li><a href="#" data-slug="all">Show all<span>12</span></a></li>
-                        <li><a href="#" data-slug="design">Design<span>3</span></a></li>
-                        <li><a href="#" data-slug="branding">Branding<span>9</span></a></li>
-                        <li><a href="#" data-slug="illustration">Illustration<span>11</span></a></li>
-                        <li><a href="#" data-slug="motion">Motion<span>4</span></a></li>
-                    </ul>
-
-                    <div class="portfolio-filtering__categories-dropdown dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </div>
-
-                    <div class="portfolio-filtering__posts">
-                        <a href="" class="portfolio-filtering__post"><h4>Design</h4><h3>Sofa</h3></a>
-                        <a href="" class="portfolio-filtering__post portfolio-filtering__post--wide"><h4>Design</h4><h3>Sofa</h3></a>
-                        <a href="" class="portfolio-filtering__post portfolio-filtering__post--wide"><h4>Design</h4><h3>Sofa</h3></a>
-                        <a href="" class="portfolio-filtering__post"><h4>Design</h4><h3>Sofa</h3></a>
-                    </div>
-
-                    <div class="portfolio-filtering__button">Explore more</div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="background-darkblue slider-team">
         <div class="container">
             <div class="row">
@@ -171,7 +100,7 @@ foreach ( $categories as $category ) {
                                 <h4 class="slider-arrows-dots__slide-position">frontend developer</h4>
                             </li>
                             <li class="slider-arrows-dots__slide">
-                                <div class="slider-arrows-dots__slide-border">
+                                 <div class="slider-arrows-dots__slide-border">
                                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/person4@1x.png" srcset="<?php echo get_stylesheet_directory_uri(); ?>/images/person4@2x.png 2x">
                                 </div>
                                 <h3 class="slider-arrows-dots__slide-name">Michał Krawczykowski</h3>

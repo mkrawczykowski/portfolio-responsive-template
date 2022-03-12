@@ -1,18 +1,18 @@
 <?php
 
-$id = 'logos-list-' . $block['id'];
-if( !empty($block['anchor']) ) {
-    $id = $block['anchor'];
-}
+  $id = 'logos-list-' . $block['id'];
+  if( !empty($block['anchor']) ) {
+      $id = $block['anchor'];
+  }
 
-$className = 'logos-list-';
-if( !empty($block['className']) ) {
-    $className .= ' ' . $block['className'];
-}
+  $className = 'logos-list-';
+  if( !empty($block['className']) ) {
+      $className .= ' ' . $block['className'];
+  }
 
 ?>
 
-<section class="image-headings-text-button background-beige">
+<section class="image-headings-text-button background-<?php echo $backgroundColor; ?>">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">

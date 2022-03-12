@@ -18,6 +18,7 @@ function my_acf_init_block_types() {
             //name, title, description, icon, array of keywords, 
             array('logos-list', 'Logos list', 'Block with list of logos', 'admin-comments', array( 'logos', 'list' ) ),
             array('image-headings-text-button', 'Two columns: image + contents', 'Two columns: with image and with headings + text + button', 'admin-comments', array( 'columns', 'image', 'headings', 'text', 'button' ) ),
+            array('portfolio-filtering', 'Portfolio filtering', 'Portfolio items with categories filtering', 'admin-comments', array( 'portfolio', 'filtering' ) ),
         );
 
         foreach ($blocks as $block){
@@ -29,6 +30,7 @@ function my_acf_init_block_types() {
                 'icon'              => $block[3],
                 'keywords'          => $block[4],
                 'enqueue_style'     => plugin_dir_url(__FILE__) .  '/blocks/'. $block[0] . '/dist/main.css',
+                'enqueue_script'    => plugin_dir_url(__FILE__) .  '/blocks/'. $block[0] . '/dist/app.js',
             ));
         }
     }
