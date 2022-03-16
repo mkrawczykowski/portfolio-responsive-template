@@ -88,9 +88,23 @@
                       <a href="" class="portfolio-filtering__post"><h4>Design</h4><h3>Sofa</h3></a>
                     </div>
 
-                    <div class="portfolio-filtering__button">Explore more</div>
+                    <div class="portfolio-filtering__button" data-id="all" data-active="true">Explore more</div>
 
                 </div>
             </div>
         </div>
     </section>
+
+<?php
+  if (!function_exists('add_url_to_body')){
+    add_action('wp_footer', 'add_url_to_body');
+
+    function add_url_to_body(){ ?>
+      <script>
+        let body = document.getElementsByTagName('body');
+        (body.length) ? body[0].dataset.homepage = '<?php echo get_home_url(); ?>' : '';
+      </script>
+    <?php
+    }
+  };
+?>
