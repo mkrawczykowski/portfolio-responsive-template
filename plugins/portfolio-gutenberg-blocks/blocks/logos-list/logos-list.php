@@ -11,7 +11,8 @@ if( !empty($block['className']) ) {
 }
 
 if( have_rows('logos') ):
-    $backgroundColor = get_field('background-color');   
+    $backgroundColor = get_field('background-color');
+endif;  
 ?>
     <section class="logos-list background-<?php echo $backgroundColor; ?> <?php echo esc_attr($className); ?>" id="<?php echo esc_attr($id); ?>">
         <div class="container">
@@ -34,7 +35,3 @@ if( have_rows('logos') ):
             </div>
         </div>
     </section>
-
-<?php
-    endif;
-?>
